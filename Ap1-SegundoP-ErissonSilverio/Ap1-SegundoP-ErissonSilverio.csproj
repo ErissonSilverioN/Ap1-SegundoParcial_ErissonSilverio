@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
+    <RootNamespace>Ap1_SegundoP_ErissonSilverio</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UI\Registros\icons8-eliminar-16%281%29.png" />
+    <None Remove="UI\Registros\icons8-guardar-24.png" />
+    <None Remove="UI\Registros\icons8-nuevo-24.png" />
+    <None Remove="UI\Registros\icons8-persona-femenina-24.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BLL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UI\Registros\icons8-eliminar-16(1).png" />
+    <Resource Include="UI\Registros\icons8-guardar-24.png" />
+    <Resource Include="UI\Registros\icons8-nuevo-24.png" />
+    <Resource Include="UI\Registros\icons8-persona-femenina-24.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+﻿<Window x:Class="Ap1_SegundoP_ErissonSilverio.UI.Registros.rAnonimus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ap1_SegundoP_ErissonSilverio.UI.Registros"
+        mc:Ignorable="d"
+        Title="rAnonimus" Height="600" Width="670">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <Button x:Name="buscarButton" Height="43" Width="108" HorizontalAlignment="Left" Margin="200,40,0,0" Content="Buscar" FontWeight="Bold" FontSize="14" >
+                <Button.Background>
+                    <ImageBrush ImageSource="icons8-persona-femenina-24.png" Stretch="None" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            
+            
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <Button x:Name="nuevoButton" Content="Nuevo"  Margin="80,210,0,0" Height="48" Width="101" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left">
+                <Button.Background>
+                    <ImageBrush ImageSource="icons8-nuevo-24.png" Stretch="None" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="guardarButton" Content="Guardar"  Height="50" Width="117" Margin="260,-50,0,0" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left">
+                <Button.Background>
+                    <ImageBrush ImageSource="icons8-guardar-24.png" Stretch="None" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="eliminarButton" Content="Eliminar" HorizontalAlignment="Left" Height="51" Width="103" Margin="450,-50,0,0" FontWeight="Bold" FontSize="14">
+                <Button.Background>
+                    <ImageBrush ImageSource="icons8-eliminar-16(1).png" Stretch="None" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            
+            
+
+        </StackPanel>
+
+
+
+
+
+    </Grid>
+</Window>
