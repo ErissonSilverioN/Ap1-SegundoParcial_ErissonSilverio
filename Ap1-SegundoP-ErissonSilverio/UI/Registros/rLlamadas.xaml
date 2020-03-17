@@ -5,21 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ap1_SegundoP_ErissonSilverio.UI.Registros"
         mc:Ignorable="d"
-        Title="rAnonimus" Height="600" Width="670">
+        Title="rLlamadas" Height="600" Width="670" Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="25*"/>
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
         <StackPanel>
-            <Button x:Name="buscarButton" Height="43" Width="108" HorizontalAlignment="Left" Margin="200,40,0,0" Content="Buscar" FontWeight="Bold" FontSize="14" Click="buscarButton_Click" >
+            <Button x:Name="buscarButton" Height="43" Width="108" HorizontalAlignment="Left" Margin="200,40,0,0" Content="Buscar" FontWeight="Bold" FontSize="14" Click="buscarButton_Click" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" >
                 <Button.Background>
                     <ImageBrush ImageSource="icons8-persona-femenina-24.png" Stretch="None" AlignmentX="Left"/>
                 </Button.Background>
             </Button>
 
-            <Label Content="LlamadaId" HorizontalAlignment="Left" Margin="25,-40,0,0"/>
+            <Label Content="LlamadaId" HorizontalAlignment="Left" Margin="25,-40,0,0" FontWeight="Bold"/>
             <TextBox x:Name="idTextBox" Width="68" HorizontalAlignment="Left" Margin="100,-50,0,0" Height="19" PreviewTextInput="idTextBox_PreviewTextInput">
                 <TextBox.Text>
                     <Binding Path="LlamadaId" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
@@ -30,9 +31,8 @@
                 </TextBox.Text>
             </TextBox>
 
-
-            <Label Content="Problema" HorizontalAlignment="Left" Width="79" Margin="30,75,0,0"/>
-            <TextBox x:Name="problemaTextBox" TextWrapping="Wrap" Width="181" HorizontalAlignment="Left" Margin="100,-22,0,0" PreviewTextInput="problemaTextBox_PreviewTextInput">
+            <Label Content="Problema" HorizontalAlignment="Left" Width="79" Margin="30,75,0,0" FontWeight="Bold"/>
+            <TextBox x:Name="problemaTextBox" TextWrapping="Wrap" Width="239" HorizontalAlignment="Left" Margin="100,-22,0,0" PreviewTextInput="problemaTextBox_PreviewTextInput">
                 <TextBox.Text>
                     <Binding Path="Problema" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
                         <Binding.ValidationRules>
@@ -42,8 +42,8 @@
                 </TextBox.Text>
             </TextBox>
 
-            <Label Content="Solucion" HorizontalAlignment="Left" Margin="300,-120,0,0" Height="26"/>
-            <TextBox x:Name="solucionTextBox" TextWrapping="Wrap" Width="276" HorizontalAlignment="Left" Margin="362,-120,0,0" Height="22" PreviewTextInput="solucionTextBox_PreviewTextInput">
+            <Label Content="Solucion" HorizontalAlignment="Left" Margin="300,-112,0,0" Height="26" FontWeight="Bold"/>
+            <TextBox x:Name="solucionTextBox" TextWrapping="Wrap" Width="276" HorizontalAlignment="Left" Margin="362,-112,0,0" Height="22" PreviewTextInput="solucionTextBox_PreviewTextInput">
                 <TextBox.Text>
                     <Binding Path="Solucion" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
                         <Binding.ValidationRules>
@@ -53,8 +53,13 @@
                 </TextBox.Text>
             </TextBox>
 
-            <Button x:Name="agregarTextBox" Content="Agregar" HorizontalAlignment="Left" Height="35" Width="103" Margin="535,-32,0,0" Click="agregarTextBox_Click"/>
-            <Label Content="Descripcion" Margin="25,-110,0,0" Height="35" HorizontalAlignment="Left"/>
+            <Button x:Name="agregarTextBox" Content="      Agregar" HorizontalAlignment="Left" Height="35" Width="103" Margin="535,-32,0,0" Click="agregarTextBox_Click" FontWeight="Bold" BorderBrush="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
+                <Button.Background>
+                    <ImageBrush ImageSource="icons8-agregar-propiedad-30.png" Stretch="None" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            
+            <Label Content="Descripcion" Margin="25,-110,0,0" Height="35" HorizontalAlignment="Left" FontWeight="Bold"/>
             <TextBox x:Name="descripcionTextBox" TextWrapping="Wrap" Width="179" HorizontalAlignment="Left" Margin="100,-110,0,0" Height="24" PreviewTextInput="descripcionTextBox_PreviewTextInput">
                 <TextBox.Text>
                     <Binding Path="Descripcion" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
@@ -68,17 +73,19 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1">
-            <Button x:Name="nuevoButton" Content="Nuevo"  Margin="80,300,0,0" Height="48" Width="101" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Click="nuevoButton_Click">
+            <Button x:Name="nuevoButton" Content="Nuevo"  Margin="80,300,0,0" Height="48" Width="101" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Click="nuevoButton_Click" BorderBrush="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
                 <Button.Background>
                     <ImageBrush ImageSource="icons8-nuevo-24.png" Stretch="None" AlignmentX="Left"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="guardarButton" Content="Guardar"  Height="50" Width="117" Margin="260,-50,0,0" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Click="guardarButton_Click">
+            
+            <Button x:Name="guardarButton" Content="Guardar"  Height="50" Width="117" Margin="260,-50,0,0" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Click="guardarButton_Click" BorderBrush="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
                 <Button.Background>
                     <ImageBrush ImageSource="icons8-guardar-24.png" Stretch="None" AlignmentX="Left"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="eliminarButton" Content="Eliminar" HorizontalAlignment="Left" Height="51" Width="103" Margin="450,-50,0,0" FontWeight="Bold" FontSize="14" Click="eliminarButton_Click">
+            
+            <Button x:Name="eliminarButton" Content="Eliminar" HorizontalAlignment="Left" Height="51" Width="103" Margin="450,-50,0,0" FontWeight="Bold" FontSize="14" Click="eliminarButton_Click" BorderBrush="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
                 <Button.Background>
                     <ImageBrush ImageSource="icons8-eliminar-16(1).png" Stretch="None" AlignmentX="Left"/>
                 </Button.Background>
@@ -86,19 +93,16 @@
 
             <DataGrid x:Name="detalleDataGrid" Height="216" HorizontalAlignment="Left" Margin="25,-450,0,0" Width="613">
                 <DataGrid.ItemsSource>
-                    <Binding Path="LlamadasDetalles" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
-
-                    </Binding>
+                    <Binding Path="LlamadasDetalles" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay"/>
                 </DataGrid.ItemsSource>
             </DataGrid>
 
-            <Button x:Name="removerButton" Content="Remover" HorizontalAlignment="Left" Height="41" Width="110" Margin="26,-186,0,0" Click="removerButton_Click"/>
-
+            <Button x:Name="removerButton" Content="     Remover" HorizontalAlignment="Left" Height="41" Width="110" Margin="26,-186,0,0" Click="removerButton_Click" FontWeight="Bold" BorderBrush="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}">
+                <Button.Background>
+                    <ImageBrush ImageSource="icons8-borrar-30.png" Stretch="None" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
         </StackPanel>
-
-
-
-
 
     </Grid>
 </Window>

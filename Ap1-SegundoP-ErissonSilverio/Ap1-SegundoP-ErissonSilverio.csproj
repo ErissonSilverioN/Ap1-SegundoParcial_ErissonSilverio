@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="UI\Registros\icons8-agregar-propiedad-30.png" />
+    <None Remove="UI\Registros\icons8-borrar-30.png" />
     <None Remove="UI\Registros\icons8-eliminar-16%281%29.png" />
     <None Remove="UI\Registros\icons8-guardar-24.png" />
     <None Remove="UI\Registros\icons8-nuevo-24.png" />
@@ -24,6 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="UI\Registros\icons8-agregar-propiedad-30.png" />
+    <Resource Include="UI\Registros\icons8-borrar-30.png" />
     <Resource Include="UI\Registros\icons8-eliminar-16(1).png" />
     <Resource Include="UI\Registros\icons8-guardar-24.png" />
     <Resource Include="UI\Registros\icons8-nuevo-24.png" />
