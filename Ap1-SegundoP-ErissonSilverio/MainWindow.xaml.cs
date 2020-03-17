@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ap1_SegundoP_ErissonSilverio.Entidades;
+using Ap1_SegundoP_ErissonSilverio.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +29,8 @@ namespace Ap1_SegundoP_ErissonSilverio
 
         private void CrearRegistro_Click(object sender, RoutedEventArgs e)
         {
-
+            rAnonimus registro = new rAnonimus();
+            registro.ShowDialog();
         }
     }
 }
