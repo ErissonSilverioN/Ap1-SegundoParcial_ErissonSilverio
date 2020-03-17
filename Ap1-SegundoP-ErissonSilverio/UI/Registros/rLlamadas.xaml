@@ -41,7 +41,7 @@
                     </Binding>
                 </TextBox.Text>
             </TextBox>
-            
+
             <Label Content="Solucion" HorizontalAlignment="Left" Margin="300,-120,0,0" Height="26"/>
             <TextBox x:Name="solucionTextBox" TextWrapping="Wrap" Width="276" HorizontalAlignment="Left" Margin="362,-120,0,0" Height="22" PreviewTextInput="solucionTextBox_PreviewTextInput">
                 <TextBox.Text>
@@ -53,7 +53,7 @@
                 </TextBox.Text>
             </TextBox>
 
-            <Button x:Name="agregarTextBox" Content="Agregar" HorizontalAlignment="Left" Height="35" Width="103" Margin="535,-40,0,0" Click="agregarTextBox_Click"/>
+            <Button x:Name="agregarTextBox" Content="Agregar" HorizontalAlignment="Left" Height="35" Width="103" Margin="535,-32,0,0" Click="agregarTextBox_Click"/>
             <Label Content="Descripcion" Margin="25,-110,0,0" Height="35" HorizontalAlignment="Left"/>
             <TextBox x:Name="descripcionTextBox" TextWrapping="Wrap" Width="179" HorizontalAlignment="Left" Margin="100,-110,0,0" Height="24" PreviewTextInput="descripcionTextBox_PreviewTextInput">
                 <TextBox.Text>
@@ -83,18 +83,18 @@
                     <ImageBrush ImageSource="icons8-eliminar-16(1).png" Stretch="None" AlignmentX="Left"/>
                 </Button.Background>
             </Button>
-            
-            <DataGrid x:Name="detalleDataGrid" Height="220" HorizontalAlignment="Left" Margin="10,-450,0,0" Width="648">
+
+            <DataGrid x:Name="detalleDataGrid" Height="216" HorizontalAlignment="Left" Margin="25,-450,0,0" Width="613">
                 <DataGrid.ItemsSource>
                     <Binding Path="LlamadasDetalles" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
-                        
+
                     </Binding>
                 </DataGrid.ItemsSource>
             </DataGrid>
-            
-            <Button x:Name="removerButton" Content="Remover" HorizontalAlignment="Left" Height="31" Width="106" Margin="15,-175,0,0" Click="removerButton_Click"/>
-            
-    </StackPanel>
+
+            <Button x:Name="removerButton" Content="Remover" HorizontalAlignment="Left" Height="41" Width="110" Margin="26,-186,0,0" Click="removerButton_Click"/>
+
+        </StackPanel>
 
 
 
